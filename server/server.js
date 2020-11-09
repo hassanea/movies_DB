@@ -25,10 +25,10 @@ const selectAllMoviesByID = 'SELECT * FROM MOVIES WHERE MOVIE_ID=?';
 //const updateTaskComplete = 'UPDATE TASKS SET TASK_COMPLETE=? WHERE TASK_ID=?';
 
 const conn = mysql.createConnection({
-   host: '192.168.0.29',
-   user: 'root',
-   password: 'YoshiMan44gnuTux96!!!',
-   database: 'movie_db',
+   host: 'x',
+   user: 'x',
+   password: 'x',
+   database: 'x',
    port: 3306    
 });
 
