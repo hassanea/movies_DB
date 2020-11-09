@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const mysql = require('mysql');
 var path = require('path');
-
+const dbconfig = require('./.env');
 
 
 const app = express();
@@ -25,10 +25,10 @@ const selectAllMoviesByID = 'SELECT * FROM MOVIES WHERE MOVIE_ID=?';
 //const updateTaskComplete = 'UPDATE TASKS SET TASK_COMPLETE=? WHERE TASK_ID=?';
 
 const conn = mysql.createConnection({
-   host: 'x',
-   user: 'x',
-   password: 'x',
-   database: 'x',
+   host: dbconfig.HOSTNAME,
+   user: dbconfig.USER,
+   password: dbconfig.PASSWD,
+   database: dbconfig.DB,
    port: 3306    
 });
 
